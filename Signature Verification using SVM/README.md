@@ -1,6 +1,27 @@
 
 # Signature Verification System
 
+## Summary: 
+
+The developed Signature Verification System adeptly utilizes image processing techniques, 
+particularly Histogram of Oriented Gradients (HOG), to achieve a 100% training accuracy in 
+discerning between genuine and forged signatures. The meticulously labeled dataset, comprising 
+images from a team member, undergoes essential preprocessing steps, highlighting the 
+robustness of the chosen methodology. The exclusion of neural networks in favor of a Support 
+Vector Machine (SVM) for classification contributes to the system's transparency and 
+interpretability. Despite the notable achievements in accuracy, the project acknowledges the 
+influence of the dataset size on these results, suggesting a need for further exploration with a 
+more extensive and diverse dataset to ensure the model's reliability in practical applications.
+
+## Feature extraction using HOG
+
+Histogram of oriented gradients was used to extract features from an image. 
+
+![Feature Extraction output](./artifacts/output.png)
+
+
+
+
 ## Installation and Local Setup Guide
 
 Follow these steps to install and run the project on your local machine:
@@ -47,6 +68,7 @@ python src/components/training.py
 
 This will create your custom-trained data model in the `artifacts` directory.
 
-Feel free to explore and contribute to this project!
 
-**Note:** Update or modify the content as per your project's specific requirements.
+
+## Results
+![Feature Extraction output](./artifacts/evaluation%20results.png)
